@@ -1,0 +1,51 @@
+# Dotfiles Management Configuration
+# This file defines which dotfiles to track and sync
+
+# Git repository settings
+repository:
+  # Repository URL (can be GitHub or GitLab)
+  url: "https://github.com/USERNAME/dotfiles.git"
+  # or: "https://gitlab.com/username/dotfiles.git"
+  
+  # Branch to push to
+  branch: "main"
+  
+  # Auto-detect provider from URL (github/gitlab)
+  # provider: auto
+
+# Files to manage
+# Format: 
+#   - source: path in home directory (relative to ~)
+#     dest: path in _homeroot (relative path)
+files:
+
+  # Shell configuration
+  - source: "~/.profile"
+    dest: ".profile"
+  
+  - source: "~/.bashrc"
+    dest: ".bashrc"
+  
+  - source: "~/.bash_profile"
+    dest: ".bash_profile"
+  
+  - source: "~/.zshrc"
+    dest: ".zshrc"
+  
+  - source: "~/.zprofile"
+    dest: ".zprofile"
+  
+  # Git configuration
+  - source: "~/.gitconfig"
+    dest: ".gitconfig"
+  
+  - source: "~/.gitignore_global"
+    dest: ".gitignore_global"
+  
+
+# Files or patterns to ignore when checking for changes
+ignore:
+  - "*.tmp"
+  - "*.log"
+  - ".DS_Store"
+
