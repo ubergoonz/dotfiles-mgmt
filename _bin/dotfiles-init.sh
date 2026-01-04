@@ -202,7 +202,7 @@ files:
 # Use the TUI (dotfiles-tui.sh) for an interactive interface
 EOF
     
-    print_msg "$GREEN" "✓ Configuration file created: $CONFIG_FILE"
+    print_msg "$GREEN" "✓ Basic configuration file created: $CONFIG_FILE"
     echo
 }
 
