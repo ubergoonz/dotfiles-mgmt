@@ -31,6 +31,36 @@ dotfiles-mgmt/
 
 ## 🚀 Quick Start
 
+### Step 0: Get the Repository
+
+You have two options to get started:
+
+#### Option A: Fork this Repository (Recommended)
+
+1. Fork this repository on GitHub to your account
+2. Clone your fork with the folder name `dotfiles`:
+
+```bash
+git clone https://github.com/YOUR-USERNAME/dotfiles-mgmt.git dotfiles
+cd dotfiles
+```
+
+This gives you your own repository to customize and push your dotfiles to.
+
+#### Option B: Clone Directly
+
+If you cloned this repository directly:
+
+```bash
+git clone https://github.com/ubergoonz/dotfiles-mgmt.git dotfiles
+cd dotfiles
+
+# IMPORTANT: Remove the .git folder to start fresh
+rm -rf .git
+```
+
+**Why remove .git?** You need to initialize your own git repository pointing to your personal dotfiles repo, not this template repository.
+
 ### Step 1: Initialize (First Time Setup)
 
 Run the initialization script to set up your dotfiles management:
